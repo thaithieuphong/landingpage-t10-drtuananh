@@ -7,8 +7,25 @@
 html, body {
     overflow: auto;
     height: 100%;
-    background-color: #f5f4f0!important;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('/public/img/background.jpg');
+  
+    /* Full height */
+    height: auto; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-glass {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -18,10 +35,14 @@ html, body {
         font-size: 1.8rem;
     }
 
+    .parallax {
+        background-attachment: scroll;
+    }
+
     .title-bar {
         width: 100%;
         height: 170px;
-        background-color: #f5f4f0!important;
+        
     }
 
     .reverse-column {
@@ -50,7 +71,6 @@ html, body {
 
     .schedule-form {
         width: 100%;
-        background-color: #0091ff;
     }
 
     .fa {
@@ -81,7 +101,7 @@ html, body {
     .title-bar {
         width: 100%;
         height: 170px;
-        background-color: #f5f4f0!important;
+        
     }
 
     .reverse-column {
@@ -99,10 +119,10 @@ html, body {
         object-fit: cover;
     }
 
-    .section-container {
+    /* .section-container {
         width: auto;
-        padding: 2rem 0;
-    }
+        padding: 1rem 0;
+    } */
     
     .text-justify {
         text-align: justify;
@@ -119,7 +139,6 @@ html, body {
 
     .schedule-form {
         width: 100%;
-        background-color: #0091ff;
     }
 
     .fa {
@@ -151,7 +170,7 @@ html, body {
     .title-bar {
         width: 100%;
         height: 200px;
-        background-color: #f5f4f0!important;
+        
     }
 
     .reverse-column {
@@ -193,7 +212,6 @@ html, body {
 
     .schedule-form {
         width: 100%;
-        background-color: #0091ff;
     }
 
     .fa {
@@ -225,7 +243,7 @@ html, body {
     .title-bar {
         width: 100%;
         height: 170px;
-        background-color: #f5f4f0!important;
+        
     }
 
     .text-justify {
@@ -243,14 +261,14 @@ html, body {
         object-fit: cover;
     }
 
-    .section-container {
+    /* .section-container {
         width: auto;
-        padding: 2rem 0;
-    }
+        padding: 1rem 0;
+    } */
 
-    .section-content {
+    /* .section-content {
         padding-top: 3.2rem;
-    }
+    } */
     
     .text-justify {
         text-align: justify;
@@ -267,7 +285,6 @@ html, body {
 
     .schedule-form {
         width: 100%;
-        background-color: #0091ff;
     }
 
     .fa {
@@ -300,7 +317,7 @@ html, body {
     .title-bar {
         width: 100%;
         height: 250px;
-        background-color: #f5f4f0!important;
+        
     }
     
     .container-img {
@@ -309,14 +326,14 @@ html, body {
         object-fit: cover;
     }
     
-    .section-container {
+    /* .section-container {
         width: auto;
-        padding: 2rem 0;
-    }
+        padding: 1rem 0;
+    } */
 
-    .section-content {
+    /* .section-content {
         padding-top: 3.2rem;
-    }
+    } */
     
     .text-justify {
         text-align: justify;
@@ -333,7 +350,6 @@ html, body {
 
     .schedule-form {
         width: 100%;
-        background-color: #0091ff;
     }
 
     .font-size {
