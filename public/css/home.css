@@ -12,7 +12,7 @@ html, body {
 
 .parallax {
     /* The image used */
-    background-image: url('/public/img/background.jpg');
+    background-image: url('/img/background.jpg');
   
     /* Full height */
     height: auto; 
@@ -26,6 +26,14 @@ html, body {
 
 .bg-glass {
     background: rgba(255, 255, 255, 0.2);
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
 }
 
 /* Extra small devices (phones, 600px and down) */

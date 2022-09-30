@@ -1,0 +1,42 @@
+{
+  "name": "tham-my-vien",
+  "version": "1.0.0",
+  "description": "Quản lý data khách hàng cho thẩm mỹ viện",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon --inspect server.js",
+    "watch": "sass --watch src/resources/scss/:src/public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thieuphongthai/tham-my-vien.git"
+  },
+  "author": "Hachitech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thieuphongthai/tham-my-vien/issues"
+  },
+  "homepage": "https://github.com/thieuphongthai/tham-my-vien#readme",
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "express-handlebars": "^6.0.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.5.2",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-slug-generator": "^1.0.4",
+    "tar": "^6.1.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "morgan": "^1.10.0"
+  }
+}
