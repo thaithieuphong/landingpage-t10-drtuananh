@@ -19,6 +19,10 @@ class HomeController {
 				lastName: req.body.fullName,
 				phone: req.body.phone,
 				description: req.body.require,
+				statusCus: {
+					statusVi: 'Tạo mới',
+					statusEng: 'New'
+				},
 			});
 			customer.save();
 			req.flash('messages_createCustomer_success', 'Đặt lịch thành công');
