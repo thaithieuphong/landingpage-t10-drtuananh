@@ -24,6 +24,10 @@ html, body {
     background-size: cover;
 }
 
+.btn-mobile {
+    width: 100%;
+}
+
 .bg-glass {
     background: rgba(255, 255, 255, 0.2);
 }

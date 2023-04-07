@@ -15,9 +15,9 @@
   "author": "Hachitech",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thieuphongthai/tham-my-vien/issues"
+    "url": "https://github.com/thieuphongthai/landingpage-t10-drtuananh/issues"
   },
-  "homepage": "https://github.com/thieuphongthai/tham-my-vien#readme",
+  "homepage": "https://github.com/thieuphongthai/landingpage-t10-drtuananh#readme",
   "dependencies": {
     "app-root-path": "^3.1.0",
     "bcryptjs": "^2.4.3",

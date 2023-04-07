@@ -14,10 +14,12 @@ function validatePhoneNumber(input_str) {
 	return isNaN(number);
 }
 var createPhone = document.getElementById('input-phone');
-createPhone.addEventListener('input', (e) => {
-	if (validatePhoneNumber(e.target.value)) {
-		document.getElementById('create_phone_error').classList.remove('off');
-	} else {
-		document.getElementById('create_phone_error').classList.add('off');
-	}
-})
+if (createPhone) {
+	createPhone.addEventListener('input', (e) => {
+		if (validatePhoneNumber(e.target.value)) {
+			document.getElementById('create_phone_error').classList.remove('off');
+		} else {
+			document.getElementById('create_phone_error').classList.add('off');
+		}
+	})
+}

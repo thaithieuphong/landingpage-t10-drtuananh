@@ -133,25 +133,30 @@
     <div class="schedule-form pb-5 pt-5 text-light bg-glass">
         <h3 class="text-center">Đặt lịch tư vấn</h3>
         <div class="container p-3">
-            <form method="POST" class="mb-4">
+            <form id="contact-form" method="POST" class="mb-4">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="input-full-name" placeholder="họ tên" name="fullName">
-                            <label class="text-secondary" for="input-full-name">Họ tên</label>
+                        <div class="form-group mb-3">
+                            <label class="" for="input-full-name">Họ tên</label>
+                            <input type="text" class="form-control" id="input-full-name" placeholder="Họ tên" name="fullName" rules="required">
+                            <span class="form-message mt-1"></span>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="input-phone" placeholder="số điện thoại" name="phone">
-                            <label class="text-secondary" for="input-phone">Số điện thoại</label>
-                            <div id="create_phone_error" class="text-warning off mt-1">Vui lòng nhập đúng số điện thoại</div>
+                        <div class="form-group mb-3">
+                            <label class="" for="input-phone">Số điện thoại</label>
+                            <input type="text" class="form-control" placeholder="Số điện thoại" name="phone" rules="required|phone">
+                            {{!-- <div id="create_phone_error" class="text-warning off mt-1">Vui lòng nhập đúng số điện thoại</div> --}}
+                            <span class="form-message mt-1"></span>
                         </div>                              
-                    </div>   
-                    <div class="form-floating mb-4">
-                        <textarea class="form-control" placeholder="yêu cầu" id="textarea-note" rows="6" name="require"></textarea>
-                        <label class="text-secondary" for="textarea-note">Yêu cầu</label>
-                        <button type="submit" class="btn btn-primary float-sm-end float-none mt-3">Đặt lịch</button>
+                    </div> 
+                    <div class="form-group mb-4">
+                        <label class="" for="textarea-note">Yêu cầu</label>
+                        <textarea class="form-control" placeholder="Yêu cầu" rows="3" name="require"></textarea>
+                        <span class="form-message mt-1"></span>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-mobile mt-3">Đặt lịch</button>
                     </div>
                 </div>
             </form>
@@ -171,3 +176,7 @@
 </div>
 <div class="parallax-30"></div>
 <script src="/js/main.js"></script>
+<script src="/js/validator.js"></script>
+<script>
+    validate('#contact-form');
+</script>
