@@ -19,17 +19,18 @@ class HomeController {
 				lastName: req.body.fullName,
 				phone: req.body.phone,
 				description: req.body.require,
+				resource: 'Landing page Trẻ hóa cô bé',
 				statusCus: {
 					statusVi: 'Tạo mới',
 					statusEng: 'New'
 				},
 			});
 			customer.save();
-			req.flash('messages_createCustomer_success', 'Đặt lịch thành công');
+			req.flash('messages_createCustomer_success', 'Đặt lịch hẹn tư vấn thành công');
 		}
 
 		if (req.body.fullName === '' || req.body.phone === '' || req.body.require === '') {
-			req.flash('messages_createCustomer_failure', 'Đặt lịch không thành công');
+			req.flash('messages_createCustomer_failure', 'Đặt lịch hẹn tư vấn không thành công');
 		}
 		res.redirect("back");
 	}
